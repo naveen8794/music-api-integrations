@@ -21,15 +21,3 @@ while playlists:
     else:
         playlists = None
 
-# Authorization Code flow required for redirecting app
-
-# token = util.prompt_for_user_token(USER,client_id=CLIENT_ID, client_secret=CLIENT_SECRET,scope='user-library-read',redirect_uri= REDIRECT_URI)
-#
-# if token:
-#     sp = spotipy.Spotify(auth=token)
-#     results = sp.current_user_saved_tracks()
-#     for item in results['items']:
-#         track = item['track']
-#         print(track['name'] + ' - ' + track['artists'][0]['name'])
-# else:
-#     print("Can't get token for", USER)
